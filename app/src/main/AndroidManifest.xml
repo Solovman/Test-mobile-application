@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplication"
         tools:targetApi="31">
+
+        <activity android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".ContentActivity"
             android:exported="false" />
@@ -19,17 +28,9 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
             android:name=".RegistrationActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
