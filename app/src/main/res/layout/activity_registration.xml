@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/welcome_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="80dp"
+        android:text="Добро пожаловать!"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/registration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Регистрация"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/on_phone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="По номеру"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/on_email_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" По email"
+            android:textColor="#800080"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email_or_phone_input"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Введите email" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Введите пароль" />
+
+    <EditText
+        android:id="@+id/password_repeat_input"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Повторите пароль" />
+
+    <Button
+        android:id="@+id/registration_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:text="Зарегистрироваться" />
+
+</LinearLayout>
