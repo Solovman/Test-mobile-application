@@ -6,8 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ProgressBar
 
-//Тут будет происходить выбор, какое именно активити будет открыто
-//при запуске приложения в том или ином сценарии
+// Управление Activity
 class SplashActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
 
@@ -17,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
 
         progressBar = findViewById(R.id.progress_bar)
 
-        // Логика для перехода на RegistrationActivity.
+        // Логика для перехода на RegistrationActivity
         Handler().postDelayed(Runnable {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
