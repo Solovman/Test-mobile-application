@@ -103,7 +103,10 @@ class RegistrationActivity : AppCompatActivity() {
                     showToast("Пароль и его повторение не совпадают")
                 }
                 else -> {
-                    // Код для обработки корректного ввода
+                    // Переход на страницу с контентом
+                    val intent = Intent(this, ContentActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
             }
         }

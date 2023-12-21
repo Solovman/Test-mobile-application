@@ -47,7 +47,7 @@
         android:textSize="15sp" />
 
     <Button
-        android:id="@+id/registration_button"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -63,5 +63,4 @@
         android:layout_marginTop="10dp"
         android:text="У вас нет аккаунта? Регистрация"
         android:textSize="15sp" />
-
 </LinearLayout>

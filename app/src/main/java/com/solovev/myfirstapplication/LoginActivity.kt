@@ -17,13 +17,22 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         val linkToRegistration = findViewById<TextView>(R.id.to_registration_page_label)
-
+        val linkToContent = findViewById<TextView>(R.id.login_button)
 
         linkToRegistration.setOnClickListener{
             val intent = Intent(this, RegistrationActivity::class.java)
 
             startActivity(intent)
+            finish()
         }
+
+        linkToContent.setOnClickListener{
+            val intent = Intent(this, ContentActivity::class.java)
+
+            startActivity(intent)
+            finish()
+        }
+
 
         val fullText = linkToRegistration.text.toString()
 
